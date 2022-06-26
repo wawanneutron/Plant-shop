@@ -1,0 +1,370 @@
+/* TODO: NAVIGATION - NAVBAR */
+.header {
+  height: 100vh;
+  background-image: url(/assets/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  height: 20rem;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.85)
+  );
+}
+
+.header-nav {
+  padding-top: 3.2rem;
+}
+
+.navigation {
+  margin: 0 9.6rem 6.4rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4.6rem;
+  margin: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 6.8rem;
+}
+
+.main-nav-list li {
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #fff;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.logo-chart:link,
+.logo-chart:visited {
+  position: relative;
+  color: #081323;
+}
+
+.chart-count {
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: flex;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  border-radius: 50px;
+  font-size: 1.4rem;
+}
+
+.chart-count strong {
+  margin: auto;
+}
+
+.header-text-box {
+  /* width: 50%; */
+  margin: auto;
+  text-align: center;
+}
+
+.text-header {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.form-search {
+  position: relative;
+  margin: auto;
+  width: 40rem;
+  height: 4.8rem;
+  padding: 3.2rem 1.8rem;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.input-text {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  border: none;
+  width: 40rem;
+  height: 4.8rem;
+  padding: 3.2rem 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  background: none;
+  overflow: hidden;
+}
+
+.input-text:focus {
+  box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.269);
+}
+
+.input-text::placeholder {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.search-button {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  border: none;
+  cursor: pointer;
+}
+
+.hover-product {
+  position: absolute;
+  top: 26rem;
+  left: 9.8rem;
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(4px);
+}
+
+.hover-product::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #fff;
+  border-radius: 100px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-product:nth-child(2) {
+  top: 45rem;
+  left: 16rem;
+}
+
+.hover-product:nth-child(3) {
+  top: 50rem;
+  left: 125rem;
+}
+
+.hover-product:hover .card-plant {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-plant {
+  font-size: 2.4rem;
+  color: #fff;
+  padding: 1.4rem 1.8rem;
+  margin-top: 2rem;
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: inline-block;
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.295);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-card-plant {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.subtext-card-plant {
+  font-size: 1.4rem;
+}
+
+/* TODO: SECTION SERVICE */
+
+.section-service {
+  padding: 9.6rem 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  column-gap: 2.4rem;
+}
+
+.text-box-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.2rem;
+}
+
+.icon-service {
+  height: 5.6rem;
+}
+.text-header-service {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.text-subheader-service {
+  color: #828282;
+  font-size: 2rem;
+}
+
+/* TODO: SECTION BEST SELLER */
+
+.section-best-seller {
+  padding: 12.8rem 0;
+}
+
+.best-seller-product {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.see-all {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+}
+
+.best-seller.grid {
+  column-gap: 2.4rem;
+}
+
+.figure-pant {
+  background-color: #c1d0e4;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-pant {
+  position: relative;
+}
+
+.img-best {
+  display: flex;
+}
+
+.img-best::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 95px);
+  width: 8rem;
+  height: 1.4rem;
+  background-color: #a2a2a2;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.img-best-plant {
+  margin: 0 auto;
+  transform: translate(0, -50%);
+}
+
+.card-plant-best {
+  display: flex;
+  row-gap: 4.8rem;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 3.2rem;
+  box-shadow: 0 1.8rem 3.2rem rgba(0, 0, 0, 0.035);
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+.card-title {
+  margin-bottom: 0.8rem;
+}
+
+.btn-add-chart {
+  border: none;
+}
+
+.card-plant-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-add-chart {
+  background-color: unset;
+  cursor: pointer;
+}
+
+.icon-plus {
+  height: 4.8rem;
+}
