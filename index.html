@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +46,11 @@
               alt="logo plant shop"
             />
           </a>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="grid-outline"></ion-icon>
+          </button>
         </div>
       </div>
       <div class="header-text-box">
@@ -60,7 +66,7 @@
           <div class="form-search">
             <input
               type="text"
-              class="input-text"
+              class="input-text-search"
               name="search"
               placeholder="Search plant"
             />
@@ -147,15 +153,13 @@
             />
           </a>
         </div>
-        <div class="best-seller grid-col-3 grid">
+        <div class="sliders col-best-seller">
           <figure class="figure-pant">
             <div class="img-best">
               <img
                 class="img-best-plant"
                 src="./assets/plant/best-product/plant-1.png"
                 alt="Image best product"
-                height="200"
-                width="200"
               />
             </div>
             <div class="card-plant-best">
@@ -187,8 +191,6 @@
                 class="img-best-plant"
                 src="./assets/plant/best-product/plant-2.png"
                 alt="Image best product"
-                height="200"
-                width="200"
               />
             </div>
             <div class="card-plant-best">
@@ -220,8 +222,37 @@
                 class="img-best-plant"
                 src="./assets/plant/best-product/plant-3.png"
                 alt="Image best product"
-                height="200"
-                width="200"
+              />
+            </div>
+            <div class="card-plant-best">
+              <div class="card-plant-header">
+                <p class="card-title">Cammile</p>
+                <div class="stars">
+                  <img src="./assets/icon/star.svg" class="star" alt="star" />
+                  <img src="./assets/icon/star.svg" class="star" alt="star" />
+                  <img src="./assets/icon/star.svg" class="star" alt="star" />
+                  <img src="./assets/icon/star.svg" class="star" alt="star" />
+                  <img src="./assets/icon/star.svg" class="star" alt="star" />
+                </div>
+              </div>
+              <div class="card-plant-body">
+                <p class="price">$65.00</p>
+                <button class="btn-add-chart">
+                  <img
+                    class="icon-plus"
+                    src="./assets/icon/add.svg"
+                    alt="add to chart"
+                  />
+                </button>
+              </div>
+            </div>
+          </figure>
+          <figure class="figure-pant">
+            <div class="img-best">
+              <img
+                class="img-best-plant"
+                src="./assets/plant/best-product/plant-1.png"
+                alt="Image best product"
               />
             </div>
             <div class="card-plant-best">
@@ -250,5 +281,206 @@
         </div>
       </div>
     </section>
+
+    <section class="section-interior">
+      <div class="text-box-heading center container">
+        <h2 class="heading-secondary mb-secondary">Interior Plant Reference</h2>
+        <h3 class="heading-tertiary">
+          make your home so comfortable with refreshing plants
+        </h3>
+      </div>
+      <div class="plant-reference">
+        <div class="category-plant grid-col-2">
+          <aside class="aside-img">
+            <figure class="img-item">
+              <img
+                class="img-plant-category"
+                src="./assets/plant/interior-plant/interior-1.png"
+                alt="plant interior living room"
+              />
+              <p class="text-img">living room</p>
+            </figure>
+            <figure class="img-item">
+              <img
+                class="img-plant-category"
+                src="./assets/plant/interior-plant/interior-3.png"
+                alt="plant interior living room"
+              />
+              <p class="text-img">living work</p>
+            </figure>
+          </aside>
+          <figure class="img-item">
+            <img
+              class="img-plant-category"
+              src="./assets/plant/interior-plant/interior-2.png"
+              alt="plant interior living room"
+            />
+            <p class="text-img">sitting room</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-plant-care">
+      <div class="grid-plane container">
+        <div class="plant-care">
+          <div class="text-box-heading">
+            <h2 class="heading-secondary mb-secondary">
+              How to care <br />
+              for plants
+            </h2>
+            <h3 class="heading-tertiary">
+              Take care of plants with all your heart
+            </h3>
+          </div>
+          <ul class="list-care">
+            <li class="list-care-item">
+              <img
+                class="icon-care"
+                src="./assets/icon/sun.svg"
+                alt="sun icon"
+              />
+              <div class="text-box-care">
+                <p class="heading-text">Adjust Lighting</p>
+                <p class="subheading-text">
+                  When caring for indoor plants, make sure the room temperature
+                  is neither too cold nor too hot
+                </p>
+              </div>
+            </li>
+            <li class="list-care-item">
+              <img
+                class="icon-care"
+                src="./assets/icon/water.svg"
+                alt="sun icon"
+              />
+              <div class="text-box-care">
+                <p class="heading-text">Don't water too often</p>
+                <p class="subheading-text">
+                  Watering ornamental plants indoors does not have to be done
+                  every day.
+                </p>
+              </div>
+            </li>
+            <li class="list-care-item">
+              <img
+                class="icon-care"
+                src="./assets/icon/plant.svg"
+                alt="sun icon"
+              />
+              <div class="text-box-care">
+                <p class="heading-text">Don't water too often</p>
+                <p class="subheading-text">
+                  Watering ornamental plants indoors does not have to be done
+                  every day.
+                </p>
+              </div>
+            </li>
+            <li class="list-care-item">
+              <img
+                class="icon-care"
+                src="./assets/icon/temperature.svg"
+                alt="sun icon"
+              />
+              <div class="text-box-care">
+                <p class="heading-text">Fertilize regularly</p>
+                <p class="subheading-text">
+                  The nutrients most indoor houseplants need are nitrogen for
+                  balance and potassium for stem strength
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="img-plant-care"
+          src="./assets/plant/plant-care.png"
+          alt="how to care for plant"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-footer grid-footer">
+        <div class="footer-cta">
+          <p class="text-header-footer">Newslatter</p>
+          <form action="#">
+            <div class="form-subs">
+              <input
+                type="text"
+                class="input-text"
+                name="search"
+                placeholder="Enter your email"
+              />
+              <button class="subscrabe-button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="frame-footer">
+          <nav class="nav-col">
+            <p class="footer-heading">Support</p>
+            <ul class="footer-nav">
+              <li class="footer-link">
+                <a href="#">About Us</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Careers</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Useful Link</p>
+            <ul class="footer-nav">
+              <li class="footer-link">
+                <a href="#">Payment & Tax</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Team of service</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Privaci Policy</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Our Menu</p>
+            <ul class="footer-nav">
+              <li class="footer-link">
+                <a href="#">Best Product</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Category</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <p class="footer-heading">Address</p>
+            <ul class="footer-nav">
+              <li class="footer-link">
+                <a href="#"
+                  >JL. Setiabudhi No. 193 Sukasari, Bandung West Java,
+                  Indonesia</a
+                >
+              </li>
+              <li class="footer-link"><a href="#">hallo@daunku.com</a></li>
+            </ul>
+          </address>
+        </div>
+        <hr class="footer-line" />
+        <p class="copyright">&copy; 2022 Daunku &dash; All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
