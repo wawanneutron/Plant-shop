@@ -1,5 +1,9 @@
 # Plant Shop - Daunku
 
+### Live Demo
+
+https://plantsop.netlify.app/
+
 ### Slicing from UI/UX design
 
 <img width="1600" alt="Cover" src="https://user-images.githubusercontent.com/60416437/175761310-c592c1d9-51ed-4ff3-b634-e96f7f6e5b73.png">
