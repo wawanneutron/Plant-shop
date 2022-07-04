@@ -37,6 +37,8 @@ html {
       TODO: Persentase of user's browser font-size setting is 62.5%
    */
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -50,6 +52,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #081323;
+  overflow-x: hidden;
 }
 
 .heading-primary {

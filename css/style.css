@@ -481,7 +481,7 @@
 /* TODO:  SECTION PLANT CARE */
 
 .section-plant-care {
-  padding: 12rem 0 13rem;
+  margin: 12rem 0 13rem;
 }
 
 .grid-plane {
@@ -567,6 +567,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  font-style: normal;
   gap: 3.2rem;
 }
 
