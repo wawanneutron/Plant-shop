@@ -4,6 +4,10 @@
 
 https://plantsop.netlify.app/
 
+### Report Testing Performace With Lighthouse
+
+<img width="584" alt="testing-performance-plantshop" src="https://user-images.githubusercontent.com/60416437/177280808-f33619a6-b0ce-4529-93b5-56b18704b7e4.png">
+
 ### Slicing from UI/UX design
 
 <img width="1600" alt="Cover" src="https://user-images.githubusercontent.com/60416437/175761310-c592c1d9-51ed-4ff3-b634-e96f7f6e5b73.png">
