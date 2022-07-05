@@ -104,6 +104,18 @@
     padding: 0 3rem;
   }
 
+  .navigation {
+    margin: 0 !important;
+  }
+
+  .header-nav {
+    padding-top: 0;
+  }
+
+  .header-text-box {
+    margin: 6.4rem auto;
+  }
+
   .container-best-seller {
     padding-left: 3rem;
   }
