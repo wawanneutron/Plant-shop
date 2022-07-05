@@ -1,5 +1,6 @@
 const togleNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
+const navLists = document.querySelector(".main-nav-list");
 
 togleNav.addEventListener("click", () => {
   header.classList.toggle("nav-open");
@@ -12,10 +13,22 @@ year.textContent = currentYear;
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
     // close mobile navigation
     if (link.classList.contains("main-nav-link")) {
       header.classList.toggle("nav-open");
+      // ambil menu link yang active
+      const menuActive = document.querySelector(
+        ".main-nav-list li a.menu-active"
+      );
+
+      // jika menu yang aktif tidak sama dengan yang di klik user (href nya di cek)
+      if (menuActive.getAttribute("href") !== link.getAttribute("href")) {
+        //  maka hapus clas menu-active nya
+        menuActive.classList.remove("menu-active");
+      }
+      // dan tambahkan clas menu-active
+      link.classList.add("menu-active");
     }
   });
 });

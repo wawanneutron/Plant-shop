@@ -69,7 +69,7 @@
   text-decoration: none;
 }
 
-.nav-link-active {
+.menu-active {
   background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
