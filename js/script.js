@@ -32,3 +32,22 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+// Sticky navigation
+const sectionHeader = document.querySelector(".header");
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const inter = entries[0].isIntersecting;
+    console.log(inter);
+
+    if (!inter) document.body.classList.add("sticky");
+    else document.body.classList.remove("sticky");
+  },
+  {
+    // in the view port
+    rootMargin: "-70px",
+  }
+);
+
+obs.observe(sectionHeader);
