@@ -670,3 +670,8 @@
   text-align: center;
   font-size: 1.6rem;
 }
+
+.developer:link,
+.developer:visited {
+  color: inherit;
+}
